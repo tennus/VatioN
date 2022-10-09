@@ -1,6 +1,7 @@
 var db;
 db = window.openDatabase("myDB", "1.0", "Online Social Experiment", 1024 * 1024);
 
+
 db.transaction(function (tx) {
   tx.executeSql("create table Database(name,gender,age,nationality,giver)");
 });
